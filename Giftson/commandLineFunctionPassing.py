@@ -1,4 +1,4 @@
-""" '
+"""
 Simple Python program to use command line argument to call a function with parameters 
 execution on a command line:
 
