@@ -1,4 +1,15 @@
-""" Simple Python program to use command line argument to call a function with parameters """
+""" '
+Simple Python program to use command line argument to call a function with parameters 
+execution on a command line:
+
+> commandLineFunctionPassing.py conPrint Hello
+> commandLineFunctionPassing.py conPrint "Hello World"
+
+Output:
+
+Hello
+Hello World
+"""
 import sys
 
 # function conPrint to print the 3rd argument as the output
