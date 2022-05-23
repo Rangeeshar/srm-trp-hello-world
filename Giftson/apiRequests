@@ -6,7 +6,14 @@ Requirements:
 requests library (pip install requests)
 
 How to run?
-just run the code
+just run the code and enter the key value you need or remove the comment hash 
+for print(apiValues) to print the whole text 
+
+Sample Output:
+['activity', 'type', 'participants', 'price', 'link', 'key', 'accessibility'] 
+What key value pair do you want? Hint: Type one key from the above list
+activity
+Create a cookbook with your favorite recipes
 """
 # importing requests library
 import requests
