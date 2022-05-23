@@ -6,14 +6,10 @@ Requirements:
 requests library (pip install requests)
 
 How to run?
-just run the code and enter the key value you need or remove the comment hash 
-for print(apiValues) to print the whole text 
+just run the code and the value for activity key is printed
 
 Sample Output:
-['activity', 'type', 'participants', 'price', 'link', 'key', 'accessibility'] 
-What key value pair do you want? Hint: Type one key from the above list
-activity
-Create a cookbook with your favorite recipes
+Learn to play a new instrument
 """
 # importing requests library
 import requests
@@ -25,13 +21,7 @@ request = requests.get("https://www.boredapi.com/api/activity")
 apiValues = request.json()
 
 # printing the generated values
-# print(apiValues)
+print(apiValues["activity"])
 
 # printing specific key:value pair according to our needs (Not Necessary)
-print(
-    apiValues[
-        input(
-            f"{list(apiValues.keys())} \nWhat key value pair do you want? Hint: Type one key from the above list\n"
-        )
-    ]
-)
+# print(apiValues[input(f"{list(apiValues.keys())} \nWhat key value pair do you want? Hint: Type one key from the above list\n")])
